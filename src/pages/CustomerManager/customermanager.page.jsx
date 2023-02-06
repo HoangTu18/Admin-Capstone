@@ -1,6 +1,7 @@
 import React from "react";
 import AdminPage from "../../components/AdminPage/adminpage.component";
 import MyTable from "../../components/MyTable/mytable.component";
+import CustomerEdit from "../../components/CustomerEdit/customeredit.component";
 
 function CustomerManager() {
   const header = [
@@ -74,6 +75,7 @@ function CustomerManager() {
     <div>
       <AdminPage>
         <MyTable title={"khách hàng"} header={header} body={body} />
+        <CustomerEdit/>
       </AdminPage>
     </div>
   );

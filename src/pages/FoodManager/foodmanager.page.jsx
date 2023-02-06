@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AdminPage from "../../components/AdminPage/adminpage.component";
+import DishEdit from "../../components/DishEdit/dishedit.component";
 import MyTable from "../../components/MyTable/mytable.component";
 import "./foodmanager.style.scss";
 function FoodManager() {
@@ -116,6 +117,7 @@ function FoodManager() {
           <div className="tab__body">
             <div className={tab == "tab1" ? "tab active" : "tab"}>
               <MyTable title={"món lẻ"} header={header} body={body} />
+              <DishEdit/>
             </div>
             <div className={tab == "tab2" ? "tab active" : "tab"}>
               <MyTable title={"combo"} header={header2} body={body2} />

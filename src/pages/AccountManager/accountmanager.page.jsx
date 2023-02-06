@@ -1,6 +1,7 @@
 import React from "react";
 import AdminPage from "../../components/AdminPage/adminpage.component";
 import MyTable from "../../components/MyTable/mytable.component";
+import UserEdit from "../../components/UserEdit/useredit.component";
 
 function AccountManager() {
   const header = [
@@ -56,11 +57,15 @@ function AccountManager() {
       phone: "0981287382",
     },
   ];
-
+  const dataedit = {
+    userid : "112",
+    username: "Tu",
+  }
   return (
     <div>
       <AdminPage>
         <MyTable title={"nhân viên"} header={header} body={body} />
+        <UserEdit data={dataedit}/>
       </AdminPage>
     </div>
   );
